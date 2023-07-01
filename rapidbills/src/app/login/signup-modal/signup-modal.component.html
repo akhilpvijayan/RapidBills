@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Welcome</h1>
+    <form [formGroup]="signUpForm" class="signUpForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col main">
+                <input type="text" placeholder="Business Name (Required)" id="country" formControlName="country" />
+                <input type="text" placeholder="Business Name (Required)" id="businessName" formControlName="businessName" />
+                <input type="textarea" placeholder="Address (Required)" id="address" formControlName="address">
+                <div class="col sub-div-left">
+                    <input type="text" placeholder="City (Required)" id="city" formControlName="city" />
+                    <input type="number" placeholder="PIN (Required)" id="pincode" formControlName="pincode" />
+                </div>
+                <div class="col sub-div-right">
+                    <input type="text" placeholder="State (Required)" id="state" formControlName="state" />
+                    <input type="number" placeholder="Phone (Required)" id="phone" formControlName="phone" />
+                </div>
+                <input type="email" placeholder="Email (Required)" id="email" formControlName="email" />
+            </div>
+            <div class="col sub-main">
+                <input type="text" placeholder="Username (Required)" id="userName" formControlName="userName" />
+                <input type="password" placeholder="Password (Required)" id="password" formControlName="password">
+                <input type="password" placeholder="Re-Enter Password (Required)" id="password" formControlName="password">
+                <button type="submit" class="submit" disabled="!loginForm.valid">Submit</button><br>
+                <button type="cancel" class="cancel" (click)="closeLog()">Cancel</button><br>
+            </div>
+        </div>
+    </form>
+</div>

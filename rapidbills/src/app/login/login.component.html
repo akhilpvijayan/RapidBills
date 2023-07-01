@@ -1,0 +1,28 @@
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+<div class="container">
+    <div class="row">
+        <div class="col main">
+            <div class="header">
+                <h1>RapidBills</h1>
+            </div>
+            <img src="../../assets/dahboardImage.png" alt="image" class="img-fluid">
+            <div class="caption">
+                <h1>Streamline Your Invoicing <br>Process with Ease !</h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="login-card">
+                <form [formGroup]="loginForm" class="loginForm" (ngSubmit)="onSubmit()">
+                    <input type="text" placeholder="email / username" id="userName" formControlName="userName" />
+                    <input type="password" placeholder="password" id="password" formControlName="password">
+                    <button type="submit" class="login" disabled="!loginForm.valid">Log In</button><br>
+                    <button type="button" class="login-with-google-btn">Sign in with Google</button>
+                    <div class="create-account">
+                        <a (click)="register()"><u>Create Account ?</u></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

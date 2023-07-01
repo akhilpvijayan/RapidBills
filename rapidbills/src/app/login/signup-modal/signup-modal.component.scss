@@ -1,0 +1,90 @@
+h1{
+    font-size: xx-large;
+    font-weight:500;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  form input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px #000000 solid;
+    display: block;
+    width: 90%;
+    font-size: 1.125rem;
+    color: #000000;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.1rem;
+  }
+  
+  ::placeholder {
+    color: rgba(61, 61, 61, 0.386);
+    font-family: 'Inter';
+  }
+
+  .main{
+    width: 46%;
+    float: left;
+    height: 100%;
+}
+
+.sub-main{
+    width: 46%;
+    float: right;
+    height: 100%;
+}
+
+.sub-div-left{
+    width: 44%;
+    float: left;
+    height: 100%;
+}
+
+.sub-div-right{
+    width: 44%;
+    float: right;
+    height: 100%;
+    padding-right: 30px;
+}
+
+form .submit {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: rgb(4, 167, 20);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1.3rem;
+  }
+  
+  form .submit:hover {
+    background: #0f71f1;
+    cursor: pointer;
+  }
+
+form .cancel{
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #f30707;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.8rem 1rem;
+}
